@@ -8,6 +8,10 @@ import { Component,EventEmitter,Output,Input } from '@angular/core';
 export class AppComponent {
   title = 'day';
 
+songs =[
+    "assets\song1.mp3","assets\song2.mp3","assets\song3.mp3","assets\song4.mp3","assets\song5.mp3","assets\song6.mp3"
+  ];
+
 
 xyz:boolean;
 pqr:boolean;

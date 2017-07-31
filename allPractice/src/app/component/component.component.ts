@@ -8,6 +8,8 @@ import { Component, OnInit,EventEmitter,Output} from '@angular/core';
 export class ComponentComponent implements OnInit {
 
   imgStr:string;
+
+  
   @Output()
   emi:EventEmitter<string>;
   

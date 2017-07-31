@@ -1,4 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
+
+
+
+<ul class="navbar">
+        
+         <li class="nav-item">Home </li>
+        <li class="nav-item">About Us</li>
+        <li class="nav-item">Carrier</li>
+  </ul>
+
+
+
+
+
 <div style="text-align:center">
   <h1>
     Have a great {{title}}!
@@ -6,8 +20,6 @@
 
   </div>
  
- 
-<input type="text" class="keyframes example">
 
 
   
@@ -45,18 +57,18 @@
 
 
 
-<audio controls>
+<audio controls *ngFor="let sg of songs">
 
-  <source src="assets\song1.mp3" type="audio/mpeg">
+  <source src="{{sg}}" type="audio/mpeg">
   </audio>
-  <!--<ul id="playlist">
+<!--<ul id="playlist">
         <li class="current-song"><a href="assets\song1.mp3"></li>
          <li><a href="assets\song2.mp3"></li>
         <li><a href="assets\song3.mp3"></li>
         <li><a href="assets\song4.mp3"></li>
         <li><a href="assets\song5.mp3"></li>
         <li><a href="assets\song6.mp3"></li>
-  </ul>
+  </ul>-->
 
 <input type="button" (click)="audioPlayer()">
 <script src="https://code.jquery.com/jquery-2.2.0.js"></script>-->
