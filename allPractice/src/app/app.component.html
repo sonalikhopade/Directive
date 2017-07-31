@@ -32,7 +32,7 @@
 
 
 <div style="text-align:center" style="background-color:black;">
-  <h1>
+  <h1 style="color:red">
   ....The smile is very important for health....
   </h1>
 
@@ -56,11 +56,12 @@
 
 
 
-
-<audio controls *ngFor="let sg of songs">
-
-  <source src="{{sg}}" type="audio/mpeg">
+<div *ngFor="let sg of songs">
+  <span><img [src]="sg.imgsrc" style="height:200px; width:100px"></span>
+<audio controls >
+  <source [src]="sg.src" type="audio/mpeg">
   </audio>
+</div>
 <!--<ul id="playlist">
         <li class="current-song"><a href="assets\song1.mp3"></li>
          <li><a href="assets\song2.mp3"></li>
@@ -70,9 +71,8 @@
         <li><a href="assets\song6.mp3"></li>
   </ul>-->
 
-<input type="button" (click)="audioPlayer()">
+<!--<input type="button" (click)="audioPlayer()">
 <script src="https://code.jquery.com/jquery-2.2.0.js"></script>-->
-
 <div class="container">
 
   <img class="imgeff" src="\assets\Lighthouse.jpg">

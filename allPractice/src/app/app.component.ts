@@ -9,8 +9,14 @@ export class AppComponent {
   title = 'day';
 
 songs =[
-    "assets\song1.mp3","assets\song2.mp3","assets\song3.mp3","assets\song4.mp3","assets\song5.mp3","assets\song6.mp3"
+    {src:"assets/song1.mp3",imgsrc:"assets/Chrysanthemum.jpg"},
+    {src:"assets/song2.mp3",imgsrc:"assets/Hydrangeas.jpg"},
+    {src:"assets/song3.mp3",imgsrc:"assets/Jellyfish.jpg"},
+    {src:"assets/song4.mp3",imgsrc:"assets/Koala.jpg"},
+    {src:"assets/song5.mp3",imgsrc:"assets/Lighthouse.jpg"},
+    {src:"assets/song6.mp3",imgsrc:"assets/Penguins.jpg"}
   ];
+
 
 
 xyz:boolean;
